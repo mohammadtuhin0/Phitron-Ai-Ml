@@ -20,3 +20,11 @@ if presed:
 # password = st.text_input("Enter your password: ", type="password")
 # print(type(password))
 # st.write("Your password is: ", password)
+
+selecetd = st.selectbox("Choose your profession", 
+             ("Student", "Employee", "Businessman"),
+             index = None,
+             accept_new_options = True)
+
+print(type(selecetd))
+st.write("You selected", selecetd)
